@@ -1,0 +1,35 @@
+@import "variables";
+
+.home-page-styles{
+
+
+  article{
+    .btn{
+      margin:$element-spacing*2 0;
+    }
+    p{
+      font-size: 1.15em;
+      margin:0 0 $element-spacing 0;
+    }
+    ul{
+      font-size: 1.15em;
+      li{
+        margin:$element-spacing 0;
+      }
+    }
+  }
+}
+
+@media(max-width:$size-sm){
+  .home-page-styles{
+    h1{
+      line-height: 1.15em;
+      em{
+        line-height: 1.15em;
+      }
+    }
+    .after-content-links a{
+      width: 85% !important;
+    }
+  }
+}

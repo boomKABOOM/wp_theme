@@ -1,0 +1,32 @@
+// Icons
+// -------------------------
+
+
+[data-icons8]:before,
+.icons8-facebook:before,
+.icons8-get-quote:before,
+.icons8-instagram-filled:before,
+.icons8-mail-filled:before,
+.icons8-marker-filled:before,
+.icons8-phone-filled:before,
+.icons8-pinterest-filled:before,
+.icons8-quote:before,
+.icons8-quote-left:before,
+.icons8-twitter-filled:before,
+.icons8-yelp-filled:before,
+{ @include icons8-font; }
+
+[data-icons8]:before { content: attr(data-icons8); }
+
+.icons8-facebook:before { content: $icons8-var-facebook; }
+.icons8-get-quote:before { content: $icons8-var-get-quote; }
+.icons8-instagram-filled:before { content: $icons8-var-instagram-filled; }
+.icons8-mail-filled:before { content: $icons8-var-mail-filled; }
+.icons8-marker-filled:before { content: $icons8-var-marker-filled; }
+.icons8-phone-filled:before { content: $icons8-var-phone-filled; }
+.icons8-pinterest-filled:before { content: $icons8-var-pinterest-filled; }
+.icons8-quote:before { content: $icons8-var-quote; }
+.icons8-quote-left:before { content: $icons8-var-quote-left; }
+.icons8-twitter-filled:before { content: $icons8-var-twitter-filled; }
+.icons8-yelp-filled:before { content: $icons8-var-yelp-filled; }
+

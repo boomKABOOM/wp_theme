@@ -1,0 +1,47 @@
+$size-sm: 576px;
+$size-md: 768px;
+$size-lg: 960px;
+$size-xl: 1200px;
+
+$default-font: 'Nunito', sans-serif;
+$secondary-font: 'Nunito', sans-serif;
+
+$default-font-size: 14px;
+$default-font-weight: 300;
+$bold-font: 200;
+$extrabold-font: 700;
+$default-line-height: 2em;
+$default-letterspacing: .08em;
+$element-spacing: 12px;
+
+$color-green: #4d962a;
+$color-drkblue:#407390;
+$color-drkgreen: #2e6b20;
+$color-offwhite: #f1f0ef;
+$color-ltgray: #bdb6b0;
+$color-midgray: #bbb;
+$color-gray: #808285;
+$color-drkgray: #4a4949;
+$color-black: #000;
+$color-orange: #f7941d;
+
+@mixin bg-grad($color1, $color2, $todir){
+	background: $color1;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to $todir, $color2, $color1);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to $todir, $color2, $color1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+@mixin transition-default($transition-settings){
+  -webkit-transition:$transition-settings;
+  -moz-transition:$transition-settings;
+  -o-transition:$transition-settings;
+  transition: $transition-settings;
+}
+
+@mixin transform-default($transform-settings){
+  -webkit-transform:$transform-settings;
+  -moz-transform:$transform-settings;
+  -o-transform:$transform-settings;
+  transform: $transform-settings;
+}
