@@ -8,7 +8,7 @@ $secondary-font: 'Nunito', sans-serif;
 
 $default-font-size: 14px;
 $default-font-weight: 300;
-$bold-font: 200;
+$bold-font: 300;
 $extrabold-font: 700;
 $default-line-height: 2em;
 $default-letterspacing: .08em;
@@ -19,10 +19,10 @@ $color-drkblue:#407390;
 $color-drkgreen: #2e6b20;
 $color-offwhite: #f1f0ef;
 $color-ltgray: #bdb6b0;
-$color-midgray: #bbb;
+$color-midgray: #c0c0c4;
 $color-gray: #808285;
 $color-drkgray: #4a4949;
-$color-black: #000;
+$color-black: #4a4949;
 $color-orange: #f7941d;
 
 @mixin bg-grad($color1, $color2, $todir){

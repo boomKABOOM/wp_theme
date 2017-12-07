@@ -2,16 +2,18 @@
 <?php if (have_posts()):
 while (have_posts()) : the_post(); ?>
 
-<div class="wrapper img-header dark" style="background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(<?php
-  if (has_post_thumbnail()) {
-  	the_post_thumbnail_url('full');
-  } else {
-    echo $themeRoot.'images/img-main1.jpg';
-  }
-?>) left no-repeat; background-size:cover;">
-  <div class="container" style="padding:5em 0;">
-    <div class="row">
-      <div class="col-12 text-center">
+<div class="wrapper bg-drkblue dark">
+  <div class="container slowfade" style="padding:5em 0 2em 0;">
+    <?php if(!(get_field('remove_title_subtitle'))){ ?>
+
+      <div class="page-title">
+        <h2><?php
+          if(get_field('page_intro')){
+            the_field('page_intro');
+          } else {
+            echo get_the_title(wp_get_post_parent_id( $post_ID ));
+          }
+        ?></h2>
         <h1><?php
         if(get_field('page_title')){
           the_field('page_title');
@@ -20,12 +22,20 @@ while (have_posts()) : the_post(); ?>
         }
         ?></h1>
       </div>
-    </div>
+
+    <?php } ?>
+    <?php
+      if(get_field('intro_text_block')){
+        echo '<div class="intro-text">';
+        the_field('intro_text_block');
+        echo '</div>';
+      }
+    ?>
+
   </div>
 </div>
 
-
-<div class="wrapper content-wrapper">
+<div class="wrapper">
   <div class="container">
     <div class="row">
 
@@ -33,14 +43,12 @@ while (have_posts()) : the_post(); ?>
         <!-- article -->
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <?php
-          //'providers-portal' is id 41
-          if($post->post_parent == 41){
-            if (is_user_logged_in()){
-              the_content();
-            }
-          } else{
             the_content();
-          }
+
+            if(get_field('second_content_block_1')){
+              the_field('second_content_block_1');
+            }
+
           ?>
         </article>
         <!-- /article -->
@@ -49,14 +57,73 @@ while (have_posts()) : the_post(); ?>
   </div>
 </div>
 
+<div class="wrapper bg-lt-grad second-content-section">
+  <div class="container">
+    <div class="row">
+
+
+
+      <div class="col-12">
+        <?php if(get_field('second_content_block_2')){
+          the_field('second_content_block_2');
+        } else {
+        ?>
+        <h3>After</h3>
+        <?php } ?>
+
+        <?php
+        if( have_rows('add_a_slider') ){
+          while ( have_rows('add_a_slider') ){ the_row();
+          $images = get_sub_field('images');
+          $size = 'full';
+        ?>
+        <div class="js-slider">
+        <?php
+          foreach( $images as $image ){ ?>
+            <div class="slide">
+            	<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+            </div>
+          <?php } //end foreach ?>
+        </div>
+        <?php } //endwhile
+        } //endif
+        ?>
+      </div>
+
+    </div>
+
+    <?php if(get_field('second_content_block_3')){ ?>
+      <div class="row">
+        <div class="col-12">
+          <?php the_field('second_content_block_3'); ?>
+        </div>
+      </div>
+    <?php } ?>
+
+  </div>
+</div>
+
 <?php endwhile; endif; ?>
 
-<?php
-  if(get_field('add_related_content')){
-    include('sections/posts-or-pages-custom.php');
-  }
-?>
+<script>
+$(document).ready(function(){
+  $('.js-slider').each(function(){
+    $(this).slick({
+      autoplay: false,
+      centerMode: true,
+      centerPadding: '100px',
+      autoplaySpeed: 5000,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      adaptiveHeight: true,
+      dots: true
+    });
+  });
+});
+</script>
+
 <?php include('sections/cta-block.php'); ?>
-<?php include('sections/email-signup.php'); ?>
 <?php include('sections/stuck-nav-function.php'); ?>
+
 <?php get_footer(); ?>

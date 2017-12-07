@@ -11,7 +11,7 @@
   .logo{
     position: relative;
     display: block;
-    max-width: 350px;
+    max-width: 300px;
     [class^="logo--"]{
       @include transition-default(all .5s ease);
       position: absolute;
@@ -53,7 +53,7 @@
           padding: 0 1em;
           font-size: .85em;
           font-weight: 400;
-          color: $color-ltgray;
+          color: $color-black;
           text-transform: uppercase;
           &:hover{
           }
@@ -101,6 +101,7 @@
     z-index: 999;
     background:$color-offwhite;
     padding: .85em 0;
+    border-bottom:1px solid $color-black;
     .logo{
       img{
         width: auto;
@@ -258,7 +259,7 @@
     right: 1em;
     display: block;
     z-index: 99;
-    color:#fff;
+    color:$color-drkblue;
     font-size: 2em;
     font-weight: $extrabold-font;
     &:hover{
@@ -274,12 +275,11 @@
   .nav{
     top:0;
     .container{
-      padding:1em 2.5em 0 2.5em;
+      padding:1em;
       .logo{
-        height: 5em;
+        height: 3em;
         img{
           margin:0;
-          height: 4em;
         }
       }
       nav{

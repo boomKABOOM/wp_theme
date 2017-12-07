@@ -19,7 +19,7 @@ p a {
   text-decoration: underline;
   font-weight: 700; }
   p a:hover {
-    color: #000; }
+    color: #4a4949; }
 
 img {
   max-width: 100%;
@@ -42,38 +42,38 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2em; }
 
 h1, h3 {
-  font-size: 2.25em;
+  font-size: 2.5em;
   line-height: 1.15em;
   color: #407390;
   margin: 12px 0 24px 0;
   font-weight: 700; }
 
 h2 {
-  font-size: 1.35em;
+  font-size: 1.15em;
   letter-spacing: .25em;
   color: #bdb6b0;
   text-transform: uppercase; }
 
 h4 {
-  font-size: 1.15em;
-  display: block; }
+  font-size: 1.5em;
+  display: block;
+  margin: 12px 0 24px 0; }
 
 h5 {
-  font-size: 1.25em;
-  font-weight: 700;
-  text-transform: uppercase; }
+  font-size: 1.15em;
+  line-height: 1em; }
 
 h6 {
   font-size: 1.15em;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   margin: 0 0 12px 0; }
 
 blockquote p {
   color: #bdb6b0;
   font-size: 1.75em !important;
   line-height: 1.15em;
-  font-weight: 200;
+  font-weight: 300;
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: 1.5px; }

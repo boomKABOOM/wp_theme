@@ -16,8 +16,8 @@
               the_field('home_intro_content');
             } else {
             ?>
-            <h4>Your business, but with a...</h4>
-            <h3>Rx Boom</h3>
+            <h4>Your business, but with an...</h4>
+            <h3>Rx BOOM</h3>
             <h4>Your small practice deserves a big digital presence.</h4>
             <?php
             }
@@ -44,7 +44,7 @@
   } else {
     echo ($themeRoot.'/images/img-main2.jpg');
   }
-?>) top right no-repeat; background-size:45%;">
+?>) top right no-repeat; background-size:45%; border-top:1px solid #333;">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6">
@@ -68,18 +68,8 @@
 
 <?php include('sections/cta-block.php'); ?>
 
-<?php
-if(get_field('add_related_content')){
-  include('sections/posts-or-pages-custom.php');
-} else {
-  include('sections/posts-recent.php');
-}
-?>
+
 </main>
 
-<?php include('sections/testimonials.php'); ?>
-
-<div class="bg-offwhite-grad"></div>
-<?php include('sections/email-signup.php'); ?>
 
 <?php get_footer(); ?>

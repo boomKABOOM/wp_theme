@@ -19,6 +19,9 @@
     <script src="<?php echo $themeRoot; ?>include/vendors/jquery.cookie.min.js"></script>
     <script src="<?php echo $themeRoot; ?>include/vendors/jquery.smoothState.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="<?php echo $themeRoot; ?>/include/vendors/slick/slick.css"/>
+    <script src="<?php echo $themeRoot; ?>/include/vendors/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
     <?php wp_head(); ?>
 
     <link rel="stylesheet" href="<?php echo $themeRoot; ?>include/vendors/bootstrap/css/bootstrap.min.css">
