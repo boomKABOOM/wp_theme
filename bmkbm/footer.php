@@ -11,15 +11,12 @@
           </div>
         </div>
         <div class="col-6 col-sm-2 p-3 color-ltgray">
-          <h5>Clinic</h5>
           <?php footer_nav_1(); ?>
         </div>
         <div class="col-6 col-sm-2 p-3 color-ltgray">
-          <h5>The Team</h5>
           <?php footer_nav_2(); ?>
         </div>
         <div class="col-6 col-sm-2 p-3  color-ltgray">
-          <h5>Specialties</h5>
           <?php footer_articles_nav(); ?>
         </div>
       </div>
@@ -29,7 +26,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6 text-center text-sm-left">
-          &copy; 2017 Robinet Physical Therapy
+          &copy; <?php echo date("Y"); ?> <?php echo get_bloginfo( 'name' ); ?>
         </div>
         <div class="col-12 col-sm-6 text-center text-sm-right">
           <?php footer_copyright_nav(); ?>
