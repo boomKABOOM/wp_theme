@@ -69,6 +69,5 @@ while (have_posts()) : the_post(); ?>
 </section>
 
 <?php include('sections/cta-block.php'); ?>
-<?php include('sections/email-signup.php'); ?>
 <?php include('sections/stuck-nav-function.php'); ?>
 <?php get_footer(); ?>

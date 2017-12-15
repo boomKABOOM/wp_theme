@@ -107,7 +107,7 @@
     //font-size: .85em;
   }
   input, textarea{
-    border-radius: 5px;
+    border-radius: 0;
     border: 1px solid $color-ltgray;
     box-sizing: border-box;
     margin-bottom: $element-spacing !important;
@@ -115,12 +115,12 @@
     &[type=checkbox]{
       margin: 0 .5em 0 0;
       @include transform-default(scale(1.15));
-      background: $color-gray;
+      background: #fff;
     }
     &[type=text], &[type=email], &[type=tel], &[type=password]{
       padding: .75em 1em;
       width: 100%;
-      background: $color-offwhite;
+      background: #fff;
     }
     &[type=submit], &[type=button]{
       @include transition-default(.25s ease all);
@@ -141,7 +141,7 @@
     box-sizing: border-box;
     padding: .75em 1em;
     width: 100%;
-    background: $color-offwhite;
+    background: #fff;
     min-height: 3em;
   }
 
@@ -151,24 +151,24 @@
       width: 100% !important;
     }
     label{
-      border-radius: 5px;
+      border-radius: 0;
       border: 1px solid $color-ltgray;
       display: inline-block;
       font-weight: 400;
       padding: .75em 1em;
-      background: $color-offwhite;
+      background: #fff;
     }
     ul{
       font-size: 0;
       li{
         font-size: $default-font-size;
-        border-radius: 5px;
+        border-radius: 0;
         border: 1px solid $color-ltgray;
         display: inline-block;
         font-weight: 400;
         padding: .5em 1em !important;
         margin: 0 $element-spacing 0 0 !important;
-        background: $color-offwhite;
+        background: #fff;
         input{
           margin:0 !important;
         }

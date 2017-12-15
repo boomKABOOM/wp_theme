@@ -18,15 +18,6 @@
 // MAKE SURE TO also redefine $themeRoot in the header.php file
 $themeRoot = "/wp-content/themes/bmkbm/";
 
-$result = add_role(
-    'provider',
-    __( 'Provider' ),
-    array(
-        'read'         => true,  // true allows this capability
-        'edit_posts'   => true,
-        'delete_posts' => false, // Use false to explicitly deny
-    )
-);
 
 
 if (function_exists('add_theme_support'))

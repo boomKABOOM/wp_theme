@@ -12,9 +12,9 @@
               if(get_field('cta_content')){
                 the_field('cta_content');
               } else { ?>
-                <h2>CUSTOMIZE YOUR WEBSITE TODAY.</h2>
-                <h3>Start your NY in style.</h3>
-                <p>boomKABOOM studio is a brand and design consultancy located in Austin, TX and serving clients around the world. We are dedicated to empowering clients with the brand identity, digital presence, and printed collateral needed to market their small practice simply and effectively.</p>
+                <h2>Cheers to a Wonderful Year!</h2>
+                <h3>Special Holiday Offer.</h3>
+                <p>'Tis the season of gratitude... and giving. As a special thank you for a wonderful year, boomKABOOM studio is offering complimentary on-site photography OR a small practice media kit with the purchase of a new website. But hurry, the offer ends January 15, 2018.'</p>
               <?php } ?>
           </div>
         </div>
@@ -28,7 +28,7 @@
           <?php
           endwhile;
         else:
-          echo '<a href="/contact/" class="btn btn-outline-primary">Let\'s Get Started.</a>';
+          echo '<a href="/contact/" class="btn btn-outline-primary">Learn more, book now.</a>';
         endif;
         ?>
       </div>

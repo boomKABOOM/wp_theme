@@ -70,26 +70,8 @@ while (have_posts()) : the_post(); ?>
         ?>
         <h3>After</h3>
         <?php } ?>
-
-        <?php
-        if( have_rows('add_a_slider') ){
-          while ( have_rows('add_a_slider') ){ the_row();
-          $images = get_sub_field('images');
-          $size = 'full';
-        ?>
-        <div class="js-slider">
-        <?php
-          foreach( $images as $image ){ ?>
-            <div class="slide">
-            	<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-            </div>
-          <?php } //end foreach ?>
-        </div>
-        <?php } //endwhile
-        } //endif
-        ?>
+        <?php include('sections/js-slider.php'); ?>
       </div>
-
     </div>
 
     <?php if(get_field('second_content_block_3')){ ?>
@@ -104,24 +86,6 @@ while (have_posts()) : the_post(); ?>
 </div>
 
 <?php endwhile; endif; ?>
-
-<script>
-$(document).ready(function(){
-  $('.js-slider').each(function(){
-    $(this).slick({
-      autoplay: false,
-      centerMode: true,
-      centerPadding: '100px',
-      autoplaySpeed: 5000,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows: false,
-      adaptiveHeight: true,
-      dots: true
-    });
-  });
-});
-</script>
 
 <?php include('sections/cta-block.php'); ?>
 <?php include('sections/stuck-nav-function.php'); ?>

@@ -56,8 +56,18 @@
               the_content();
             endwhile;
           endif;
+
+          if( have_rows('after_content_links') ){
+            while ( have_rows('after_content_links') ){
+              the_row();
+              ?>
+              <small><a href="<?php the_sub_field('link'); ?>" class="btn btn-outline-primary text-small m-2"><?php the_sub_field('text'); ?></a></small>
+            <?php
+            }
+          } else {
           ?>
-          <a href="/our-clinic/" class="btn btn-outline-primary">Learn More</a>
+          <a href="/contact" class="btn btn-outline-primary">Learn More</a>
+        <?php } ?>
         </article>
       </div>
     </div>

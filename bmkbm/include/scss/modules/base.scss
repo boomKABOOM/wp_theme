@@ -133,13 +133,13 @@ article{
     display: block;
     counter-reset: item;
     list-style: none;
-    margin: 0 0 0 1.5em;
+    margin: 0 0 0 $element-spacing*4;
     padding: 0;
     li {
       counter-increment: item;
       position: relative;
       z-index: 1;
-      margin: 0 0 $element-spacing*2 0;
+      margin: 0 0 $element-spacing 0;
       strong{
         font-size: 1.15em;
       }
@@ -148,7 +148,7 @@ article{
         color: $color-gray;
         position: absolute;
         top:.75em;
-        left:-1.5em;
+        right:calc(100% + 6px);
         font-size: 1.25em;
         line-height: 0;
         text-align: center;

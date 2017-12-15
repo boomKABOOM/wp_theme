@@ -8,16 +8,30 @@
 }
 
 .js-slider{
-  .slide{
-    margin: 1em;
-    box-sizing: border-box;
-    border: 10px solid #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
-    &.slick-current{
-      border-width:15px;
-      width: 65%
-    }
+  margin: 0;
+  .slick-list{
+    padding: $element-spacing*8 0 !important;
   }
+  .slide{
+    margin: 0px 20px;
+    box-sizing: border-box;
+    &.slick-slide {
+      @include transition-default(.3s ease all);
+      margin: 0;
+      transform: scale(.8);
+      box-shadow: 0 0 10px rgba(0,0,0,.25);
+      opacity: .75;
+      z-index: 1;
+      position: relative;
+    }
+    &.slick-center{
+      transform: scale(1.5);
+      box-shadow: 0 0 25px rgba(0,0,0,.75);
+      z-index: 9;
+      opacity: 1;
+     }
+  }
+
 }
 
 .content-heading{

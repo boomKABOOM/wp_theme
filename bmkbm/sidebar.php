@@ -64,7 +64,6 @@ $themeRoot = "/wp-content/themes/bmkbm/";
 			include('sections/sidebar-sibling-pages.php');
 		}
 		include('sections/sidebar-form.php');
-		include('sections/sidebar-contact-info.php');
 
 	}?>
 
