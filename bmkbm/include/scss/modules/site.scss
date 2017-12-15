@@ -26,7 +26,7 @@
     }
     &.slick-center{
       transform: scale(1.5);
-      box-shadow: 0 0 25px rgba(0,0,0,.75);
+      box-shadow: 0 0 25px rgba(0,0,0,.65);
       z-index: 9;
       opacity: 1;
      }
@@ -831,6 +831,20 @@ iframe{
     &.row{
       border-top:1px solid $color-black;
     }
+  }
+
+  .js-slider{
+    margin: 0;
+    .slick-list{
+      padding: $element-spacing*2 0 !important;
+    }
+    .slide{
+      &.slick-center{
+        transform: scale(1);
+        box-shadow: none;
+       }
+    }
+
   }
 
 }

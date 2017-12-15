@@ -28,7 +28,13 @@ $(document).ready(function(){
       centerMode: true,
       centerPadding: '0',
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
     });
   });
 });
