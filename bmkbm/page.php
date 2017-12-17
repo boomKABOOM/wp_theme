@@ -41,7 +41,7 @@ while (have_posts()) : the_post(); ?>
       <div class="col-12 col-sm-8 p-5 pr-sm-5">
         <?php include('sections/breadcrumb.php'); ?>
         <!-- article -->
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <article id="post-<?php the_ID(); ?>">
           <?php
 
               the_content();

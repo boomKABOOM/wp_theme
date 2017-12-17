@@ -2,24 +2,29 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: "Nunito", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 2em;
-  letter-spacing: 0.08em; }
+  letter-spacing: 0.08em;
+  color: #4a4949; }
 
 a, a:hover, a img, a:focus {
   text-decoration: none;
   outline: none;
   border: 0; }
 
-p a {
-  display: inline-block;
-  font-size: 1.1em;
-  color: #808285;
-  text-decoration: underline;
-  font-weight: 700; }
-  p a:hover {
-    color: #4a4949; }
+p {
+  font-size: 1.15em;
+  line-height: 2em;
+  margin: 12px 12px 12px 0; }
+  p a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #808285;
+    text-decoration: underline;
+    font-weight: 700; }
+    p a:hover {
+      color: #4a4949; }
 
 img {
   max-width: 100%;
@@ -57,11 +62,13 @@ h2 {
 h4 {
   font-size: 1.5em;
   display: block;
-  margin: 12px 0 24px 0; }
+  color: #4a4949;
+  margin: 12px 0;
+  font-weight: 700; }
 
 h5 {
   font-size: 1.15em;
-  line-height: 1em; }
+  line-height: 1.5em; }
 
 h6 {
   font-size: 1.15em;
@@ -86,25 +93,31 @@ blockquote p {
     letter-spacing: 0.08em; }
 
 article img {
-  min-width: 50%; }
+  min-width: 50%;
+  margin: 24px 0; }
 article ul {
   display: inline-block;
-  margin: 0 0 12px 18px;
-  padding: 0; }
+  margin: 0 0 48px 24px;
+  padding: 0;
+  font-size: 1.15em;
+  line-height: 2em; }
   article ul li {
     display: block;
-    margin: .5em 0;
+    margin: 0;
     position: relative; }
     article ul li:before {
       position: absolute;
       top: 0;
-      left: -18px;
-      content: '\25cf';
-      color: #808285; }
+      left: -24px;
+      content: '\25cf'; }
     article ul li ul {
-      margin: 0 0 0 1.25em; }
-      article ul li ul li:before {
-        content: '\25CB'; }
+      display: block;
+      margin: 0 0 0 24px;
+      font-size: 1em; }
+      article ul li ul li {
+        font-weight: 300; }
+        article ul li ul li:before {
+          content: '\25CB'; }
 article ol {
   display: block;
   counter-reset: item;
@@ -115,7 +128,8 @@ article ol {
     counter-increment: item;
     position: relative;
     z-index: 1;
-    margin: 0 0 12px 0; }
+    margin: 0;
+    font-weight: 700; }
     article ol li strong {
       font-size: 1.15em; }
     article ol li:before {
