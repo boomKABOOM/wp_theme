@@ -2,7 +2,7 @@
 <?php if (have_posts()):
 while (have_posts()) : the_post(); ?>
 
-<div class="wrapper img-header dark" style="background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(<?php
+<div class="wrapper img-header drk default-page" style="background:linear-gradient(to top,  rgba(64, 115, 144, 0.85), rgba(255, 255, 255, 0.5)), url(<?php
   if (has_post_thumbnail()) {
   	the_post_thumbnail_url('full');
   } else {
@@ -16,14 +16,10 @@ while (have_posts()) : the_post(); ?>
 
 <div class="wrapper bg-offwhite">
   <div class="container">
-		<div class="text-center section-links" id="quicklinks">
-			<h3>I would like to:</h3>
-			<a href="#form" class="active">Request an Appt</a> | <a href="/providers-portal">Register as a Provider</a> | <a href="#form">Contact the Office</a>
-		</div>
-    <div class="row form bg-white" id="page-content">
+		<div class="row form bg-white" id="page-content">
       <div class="col-12 col-sm-6 pr-0 pr-sm-3" id="form-content">
         <div class="links-container form" id="form">
-          <h3>Request an Appointment</h3>
+          <h3>Contact Us</h3>
     			<?php echo do_shortcode('[ninja_form id=3]'); ?>
     		</div>
       </div>
@@ -52,7 +48,5 @@ $(document).ready(function(){
 <?php endwhile; endif; ?>
 
 <?php include('sections/cta-block.php'); ?>
-
-<?php include('sections/email-signup.php'); ?>
 
 <?php get_footer(); ?>
