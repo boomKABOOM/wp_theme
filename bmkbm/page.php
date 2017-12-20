@@ -49,7 +49,7 @@ while (have_posts()) : the_post(); ?>
             if( have_rows('after_content_links') ):
               while ( have_rows('after_content_links') ) : the_row();
               ?>
-              <small><a href="<?php the_sub_field('link'); ?>" class="btn btn-outline-primary text-small m-2"><?php the_sub_field('text'); ?></a></small>
+              <small><a href="<?php the_sub_field('link'); ?>" class="btn btn-outline-primary text-small mt-2"><?php the_sub_field('text'); ?></a></small>
 
               <?php
               endwhile;

@@ -14,7 +14,7 @@ a, a:hover, a img, a:focus {
   border: 0; }
 
 p {
-  font-size: 1.15em;
+  font-size: 1em;
   line-height: 2em;
   margin: 12px 12px 12px 0; }
   p a {
@@ -37,7 +37,7 @@ hr {
   border: 0;
   width: 90%;
   border-top: 1px solid #bdb6b0;
-  margin: 36px 0; }
+  margin: 72px 0; }
 
 h1, h2, h3, h4, h5, h6 {
   color: inherit;
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2em; }
 
 h1, h3 {
-  font-size: 2.5em;
+  font-size: 2.35em;
   line-height: 1.15em;
   color: #407390;
   margin: 12px 0 24px 0;
@@ -70,10 +70,10 @@ h5 {
   line-height: 1.5em; }
 
 h6 {
-  font-size: 1.15em;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin: 0 0 12px 0; }
+  font-size: 1.3em;
+  color: inherit;
+  font-weight: 200;
+  margin: 12px 12px 12px 0; }
 
 blockquote p {
   color: #bdb6b0;
@@ -91,14 +91,18 @@ blockquote p {
     display: inline-block;
     letter-spacing: 0.08em; }
 
+article h6 {
+  margin: 12px 120px 12px 0; }
+article p {
+  margin: 12px 120px 12px 0; }
 article img {
   min-width: 50%;
-  margin: 24px 0; }
+  margin: 48px 0; }
 article ul {
   display: inline-block;
-  margin: 0 0 48px 24px;
+  margin: 0 120px 24px 24px;
   padding: 0;
-  font-size: 1.15em;
+  font-size: 1em;
   line-height: 2em; }
   article ul li {
     display: block;
@@ -156,11 +160,16 @@ article ol {
   html, body {
     font-size: 12px; }
 
+  article p, article h6 {
+    margin: 12px 0; }
+  article ul {
+    margin: 0 0 24px 24px; }
+
   h1 {
     font-size: 2.5em; }
 
   h2 {
-    font-size: 1.7em; }
+    font-size: 1.2em; }
 
   blockquote p {
     font-size: 1.75em !important; }

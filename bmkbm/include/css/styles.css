@@ -290,7 +290,7 @@ a, a:hover, a img, a:focus {
   border: 0; }
 
 p {
-  font-size: 1.15em;
+  font-size: 1em;
   line-height: 2em;
   margin: 12px 12px 12px 0; }
   p a {
@@ -313,7 +313,7 @@ hr {
   border: 0;
   width: 90%;
   border-top: 1px solid #bdb6b0;
-  margin: 36px 0; }
+  margin: 72px 0; }
 
 h1, h2, h3, h4, h5, h6 {
   color: inherit;
@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2em; }
 
 h1, h3 {
-  font-size: 2.5em;
+  font-size: 2.35em;
   line-height: 1.15em;
   color: #407390;
   margin: 12px 0 24px 0;
@@ -346,10 +346,10 @@ h5 {
   line-height: 1.5em; }
 
 h6 {
-  font-size: 1.15em;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin: 0 0 12px 0; }
+  font-size: 1.3em;
+  color: inherit;
+  font-weight: 200;
+  margin: 12px 12px 12px 0; }
 
 blockquote p {
   color: #bdb6b0;
@@ -367,14 +367,18 @@ blockquote p {
     display: inline-block;
     letter-spacing: 0.08em; }
 
+article h6 {
+  margin: 12px 120px 12px 0; }
+article p {
+  margin: 12px 120px 12px 0; }
 article img {
   min-width: 50%;
-  margin: 24px 0; }
+  margin: 48px 0; }
 article ul {
   display: inline-block;
-  margin: 0 0 48px 24px;
+  margin: 0 120px 24px 24px;
   padding: 0;
-  font-size: 1.15em;
+  font-size: 1em;
   line-height: 2em; }
   article ul li {
     display: block;
@@ -432,11 +436,16 @@ article ol {
   html, body {
     font-size: 12px; }
 
+  article p, article h6 {
+    margin: 12px 0; }
+  article ul {
+    margin: 0 0 24px 24px; }
+
   h1 {
     font-size: 2.5em; }
 
   h2 {
-    font-size: 1.7em; }
+    font-size: 1.2em; }
 
   blockquote p {
     font-size: 1.75em !important; }
@@ -455,12 +464,9 @@ article ol {
 .home-page-styles article .btn {
   margin: 24px 0; }
 .home-page-styles article p {
-  font-size: 1.15em;
   margin: 0 0 12px 0; }
-.home-page-styles article ul {
-  font-size: 1.15em; }
-  .home-page-styles article ul li {
-    margin: 12px 0; }
+.home-page-styles article ul li {
+  margin: 12px 0; }
 
 @media (max-width: 576px) {
   .home-page-styles h1 {
@@ -803,6 +809,12 @@ article ol {
       z-index: 9;
       opacity: 1; }
 
+.container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 3.5em;
+  margin: auto; }
+
 .content-heading {
   text-align: center;
   padding: 3em; }
@@ -820,7 +832,7 @@ article ol {
   .content-subheading strong {
     font-weight: 800;
     line-height: 1em;
-    font-size: 2.25em;
+    font-size: 1.75em;
     display: block;
     margin: 0; }
 
@@ -1024,7 +1036,8 @@ article ol {
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
       .slider .slide .slide--content h4 {
         font-size: 1.25em;
-        line-height: 2em; }
+        line-height: 2em;
+        font-weight: 400; }
   .slider .inactive {
     opacity: 0;
     left: 5em;
@@ -1203,7 +1216,7 @@ iframe {
 
 .footer-block a {
   display: block;
-  color: inherit; }
+  color: #4a4949; }
   .footer-block a:hover {
     text-decoration: underline; }
 .footer-block ul, .footer-block li {
@@ -1263,6 +1276,12 @@ iframe {
   padding-top: 12px;
   padding-left: 36px;
   border-left: 1px solid #4a4949; }
+  .sidebar p a {
+    font-weight: 300;
+    font-size: .85em;
+    line-height: 1.5em; }
+    .sidebar p a:hover {
+      border: 0; }
 
 .sidebar--section {
   position: relative;
@@ -1436,6 +1455,9 @@ iframe {
   .bg-img-half {
     background: none !important;
     font-size: 1em; }
+
+  .content-wrapper {
+    background: #fff; }
 
   .content-heading {
     padding: 1.5em; }
@@ -1756,7 +1778,7 @@ iframe {
       text-transform: uppercase;
       border: 1px solid #4a4949; }
       .form input[type=submit]:hover, .form input[type=button]:hover, .form textarea[type=submit]:hover, .form textarea[type=button]:hover {
-        background: #f7941d;
+        background: #407390;
         color: #fff;
         border-color: transparent; }
   .form textarea {
@@ -1818,6 +1840,17 @@ iframe {
       width: auto; }
     .form [class^='wppb'] ul .wppb-default-biographical-info {
       width: 94%; }
+
+.bg-contact-form .nf-error-msg, .bg-contact-form .ninja-forms-req-symbol {
+  color: #fff; }
+.bg-contact-form div {
+  margin: auto; }
+.bg-contact-form input, .bg-contact-form textarea {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: #333; }
+  .bg-contact-form input[type=checkbox], .bg-contact-form input[type=text], .bg-contact-form input[type=email], .bg-contact-form input[type=tel], .bg-contact-form input[type=password], .bg-contact-form input[type=submit], .bg-contact-form input[type=button], .bg-contact-form textarea[type=checkbox], .bg-contact-form textarea[type=text], .bg-contact-form textarea[type=email], .bg-contact-form textarea[type=tel], .bg-contact-form textarea[type=password], .bg-contact-form textarea[type=submit], .bg-contact-form textarea[type=button] {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: #333; }
 
 @media (max-width: 768px) {
   .site-overlay .modal-box {

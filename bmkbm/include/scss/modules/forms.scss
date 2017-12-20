@@ -130,7 +130,7 @@
       text-transform: uppercase;
       border: 1px solid $color-black;
       &:hover{
-        background: $color-orange;
+        background: $color-drkblue;
         color: #fff;
         border-color:transparent;
       }
@@ -217,6 +217,23 @@
     }
   }
 
+}
+
+.bg-contact-form{
+  .nf-error-msg, .ninja-forms-req-symbol{
+    color:#fff;
+  }
+  div{
+    margin: auto;
+  }
+  input, textarea{
+    background: rgba(255,255,255,.6);
+    border-color: #333;
+    &[type=checkbox], &[type=text], &[type=email], &[type=tel], &[type=password], &[type=submit], &[type=button]{
+      background: rgba(255,255,255,.6);
+      border-color: #333;
+    }
+  }
 }
 
 @media(max-width:$size-md){

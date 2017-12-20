@@ -14,23 +14,24 @@
               } else { ?>
                 <h2>Cheers to a Wonderful Year!</h2>
                 <h3>Special Holiday Offer.</h3>
-                <p>'Tis the season of gratitude... and giving. As a special thank you for a wonderful year, boomKABOOM studio is offering complimentary on-site photography OR a small practice media kit with the purchase of a new website. But hurry, the offer ends January 15, 2018.'</p>
+                <p>'Tis the season of gratitude... and giving. As a special thank you for a wonderful year, BoomKABOOM studio is offering complimentary on-site photography OR a small practice media kit with the purchase of a new website. But hurry, the offer ends January 15, 2018.</p>
               <?php } ?>
           </div>
+          <div class="col-12">
+            <?php
+            if( have_rows('cta_buttons') ):
+              while ( have_rows('cta_buttons') ) : the_row();
+              ?>
+              <a href="<?php the_sub_field('link'); ?>" class="btn btn-outline-primary text-small"><?php the_sub_field('text'); ?></a>
+
+              <?php
+              endwhile;
+            else:
+              echo '<a href="/holiday-2017" class="btn btn-outline-primary text-small">Learn more, book now.</a>';
+            endif;
+            ?>
+          </div>
         </div>
-
-        <?php
-        if( have_rows('cta_buttons') ):
-          while ( have_rows('cta_buttons') ) : the_row();
-          ?>
-          <a href="<?php the_sub_field('link'); ?>" class="btn btn-outline-primary "><?php the_sub_field('text'); ?></a>
-
-          <?php
-          endwhile;
-        else:
-          echo '<a href="/contact/" class="btn btn-outline-primary">Learn more, book now.</a>';
-        endif;
-        ?>
       </div>
     </div>
   </div>

@@ -2,30 +2,22 @@
 <?php if (have_posts()):
 while (have_posts()) : the_post(); ?>
 
-<div class="wrapper img-header drk default-page" style="background:linear-gradient(to top,  rgba(64, 115, 144, 0.85), rgba(255, 255, 255, 0.5)), url(<?php
+<div class="wrapper img-header drk default-page bg-contact-form" style="background:linear-gradient(to top,  rgba(64, 115, 144, 0.85), rgba(255, 255, 255, 0.5)), url(<?php
   if (has_post_thumbnail()) {
   	the_post_thumbnail_url('full');
   } else {
     echo $themeRoot.'images/img-main1.jpg';
   }
 ?>) left no-repeat; background-size:cover;">
-  <div class="container" style="padding:12em 0 5em 0;">
-    <h3 class="page-title"><?php the_title(); ?></h3>
-  </div>
-</div>
-
-<div class="wrapper bg-offwhite">
   <div class="container">
-		<div class="row form bg-white" id="page-content">
-      <div class="col-12 col-sm-6 pr-0 pr-sm-3" id="form-content">
-        <div class="links-container form" id="form">
-          <h3>Contact Us</h3>
+    <div class="row form pt-5 pb-5">
+      <div class="col-12 col-sm-8 offset-0 offset-sm-2 pr-0 pr-sm-3 text-center" id="form-content">
+        <h3 class="pt-5 pb-5"><?php the_title(); ?></h3>
+
+        <div class="links-container form text-center" id="form">
     			<?php echo do_shortcode('[ninja_form id=3]'); ?>
     		</div>
       </div>
-      <div class="col-12 col-sm-6 text-center" id="the-content">
-				<?php the_content(); ?>
-			</div>
     </div>
   </div>
 </div>
@@ -47,6 +39,6 @@ $(document).ready(function(){
 
 <?php endwhile; endif; ?>
 
-<?php include('sections/cta-block.php'); ?>
+<?php include('sections/stuck-nav-function.php'); ?>
 
 <?php get_footer(); ?>

@@ -1,7 +1,7 @@
 <div class="wrapper" style="background:#f1f0ef url(<?php echo $themeRoot; ?>/images/img-main5.jpg) top center no-repeat; border-top:1px solid #333;">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-12 col-sm-6 offset-0 offset-sm-3 text-center p-5">
+      <div class="col-12 col-sm-8 offset-0 offset-sm-2 text-center p-5">
         <h2 class="color-black">Our Services:</h2>
         <h3>Real Design for Real Patients.</h3>
         <hr class="color-black" style="width:90px; margin: 2em auto; border-width:2px;"/>
@@ -69,10 +69,14 @@
         <a href="/contact-us" class="btn btn-outline-primary">Let's get started</a>
       </div>
     </div>
+  </div>
+</div>
+<div class="wrapper" style="border-top:1px solid #000;">
+  <div class="container">
     <div class="row">
       <div class="col-12 text-center mt-5">
-        <h2>Work Samples</h2>
-        <h3>WebRx Results</h3>
+        <h2>The results are in</h2>
+        <h3>Our Modern Web Rx.</h3>
         <?php include('js-slider.php'); ?>
       </div>
     </div>
