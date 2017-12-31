@@ -36,8 +36,6 @@
   </div>
 </footer>
 
-<?php include('sections/email-capture.php'); ?>
-
 <script src="<?php echo $themeRoot; ?>/include/js/script.js"></script>
 
 <?php wp_footer(); ?>

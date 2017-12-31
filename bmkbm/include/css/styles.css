@@ -1464,7 +1464,7 @@ iframe {
       position: relative;
       top: -5em;
       margin: 0 0 -10em 0; }
-      .slider .slide .slide--content .btn-outline-primary {
+      .slider .slide .slide--content a.btn.btn-outline-primary {
         border-color: transparent;
         color: #fff;
         background: #407390; }
@@ -1868,10 +1868,10 @@ iframe {
 .bg-contact-form div {
   margin: auto; }
 .bg-contact-form input, .bg-contact-form textarea {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   border-color: #333; }
   .bg-contact-form input[type=checkbox], .bg-contact-form input[type=text], .bg-contact-form input[type=email], .bg-contact-form input[type=tel], .bg-contact-form input[type=password], .bg-contact-form input[type=submit], .bg-contact-form input[type=button], .bg-contact-form textarea[type=checkbox], .bg-contact-form textarea[type=text], .bg-contact-form textarea[type=email], .bg-contact-form textarea[type=tel], .bg-contact-form textarea[type=password], .bg-contact-form textarea[type=submit], .bg-contact-form textarea[type=button] {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     border-color: #333; }
 
 @media (max-width: 768px) {

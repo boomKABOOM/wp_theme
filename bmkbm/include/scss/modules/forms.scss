@@ -227,10 +227,10 @@
     margin: auto;
   }
   input, textarea{
-    background: rgba(255,255,255,.6);
+    background: rgba(255,255,255,.8);
     border-color: #333;
     &[type=checkbox], &[type=text], &[type=email], &[type=tel], &[type=password], &[type=submit], &[type=button]{
-      background: rgba(255,255,255,.6);
+      background: rgba(255,255,255,.8);
       border-color: #333;
     }
   }
