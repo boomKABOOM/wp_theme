@@ -38,7 +38,7 @@ while (have_posts()) : the_post(); ?>
 <div class="wrapper content-wrapper">
   <div class="container has-sidebar">
     <div class="row">
-      <div class="col-12 col-sm-8 pr-5 pt-5 pb-5 pr-sm-5">
+      <div class="col-12 col-sm-9 pr-5 pt-5 pb-5 pr-sm-5">
         <?php include('sections/breadcrumb.php'); ?>
         <!-- article -->
         <article id="post-<?php the_ID(); ?>">
@@ -58,7 +58,7 @@ while (have_posts()) : the_post(); ?>
         </article>
         <!-- /article -->
       </div>
-      <div class="col-12 col-sm-4 sidebar">
+      <div class="col-12 col-sm-3 sidebar">
         <?php get_sidebar(); ?>
       </div>
     </div>

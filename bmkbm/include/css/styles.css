@@ -1863,6 +1863,9 @@ iframe {
     .form [class^='wppb'] ul .wppb-default-biographical-info {
       width: 94%; }
 
+.form .nf-after-field .nf-error-msg {
+  height: auto; }
+
 .bg-contact-form .nf-error-msg, .bg-contact-form .ninja-forms-req-symbol {
   color: #fff; }
 .bg-contact-form div {
