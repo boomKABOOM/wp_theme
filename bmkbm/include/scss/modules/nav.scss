@@ -125,10 +125,13 @@
         &:hover{
         }
       }
-      ul ul{
-        a{
-          margin: 0;
-          padding:.75em;
+      ul li{
+        padding: 0 .3em;
+        ul{
+          a{
+            margin: 0;
+            padding:.75em;
+          }
         }
       }
     }

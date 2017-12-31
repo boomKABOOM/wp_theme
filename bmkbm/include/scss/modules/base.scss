@@ -105,6 +105,13 @@ blockquote{
   }
 }
 
+.two-col{
+  column-count: 2;
+  column-gap: 48px;
+  margin-top: 24px;
+  font-size: .85em;
+}
+
 article{
   h6{
     margin: $element-spacing $element-spacing*10 $element-spacing 0;
@@ -124,8 +131,9 @@ article{
     line-height: 2em;
     li{
       display: block;
-      margin: 0;
+      margin: 0 0 .75em 0;
       position: relative;
+      line-height: $default-line-height*.75;
       &:before{
         position: absolute;
         top:0; left: -$element-spacing*2;
@@ -184,6 +192,13 @@ article{
   float:right;
   margin: 0 0 1em 1em;
   max-width: 70%;
+}
+
+@media(max-width:$size-lg){
+  .two-col{
+    column-count: 1;
+    column-gap: 0;
+  }
 }
 
 @media(max-width:$size-md){

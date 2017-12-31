@@ -1,10 +1,10 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
 <main>
-<div class="wrapper slider" style="background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(<?php
+<div class="wrapper slider" style="background:linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.8)), url(<?php
   if(get_field('bg_image')){
     the_field('bg_image');
   } else {
-    echo ($themeRoot.'/images/img-main1.jpg');
+    echo ($themeRoot.'images/img-main1.jpg');
   }
 ?>) bottom left no-repeat; background-size:cover;">
   <div class="slide">
@@ -42,7 +42,7 @@
   if(has_post_thumbnail()){
     the_post_thumbnail_url();
   } else {
-    echo ($themeRoot.'/images/img-main2.jpg');
+    echo ($themeRoot.'images/img-main2.jpg');
   }
 ?>) top right no-repeat; background-size:45%; border-top:1px solid #333;">
   <div class="container">

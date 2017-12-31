@@ -36,7 +36,7 @@ while (have_posts()) : the_post(); ?>
 </div>
 
 <div class="wrapper content-wrapper">
-  <div class="container">
+  <div class="container has-sidebar">
     <div class="row">
       <div class="col-12 col-sm-8 pr-5 pt-5 pb-5 pr-sm-5">
         <?php include('sections/breadcrumb.php'); ?>

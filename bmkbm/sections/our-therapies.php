@@ -59,7 +59,7 @@
 
     </div>
     <div class="row border-box pt-5 mt-0 mb-5">
-      <div class="col-12 col-sm-6 p-5">
+      <div class="col-12 col-sm-6 p-4 p-md-5">
         <img src="<?php echo $themeRoot; ?>/images/img-main4.jpg" />
       </div>
       <div class="col-12 col-sm-6" style="align-self: center;">
