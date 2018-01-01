@@ -1440,7 +1440,8 @@ iframe {
 
   .bg-img-half {
     padding: 24px 0;
-    font-size: .9em; }
+    font-size: .9em;
+    background-position-y: center !important; }
 
   .container {
     width: 100% !important;
