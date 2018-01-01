@@ -774,6 +774,9 @@ iframe{
     width:100%;
     max-width: 1100px;
   }
+  .bg-img-half{
+    background-position-y: center !important;
+  }
 }
 
 @media(max-width:$size-lg){
@@ -787,8 +790,6 @@ iframe{
   .bg-img-half{
     padding: $element-spacing*2 0;
     font-size: .9em;
-    background-position-y: center !important;
-
   }
 
   .container{

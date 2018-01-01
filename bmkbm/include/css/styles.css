@@ -1431,7 +1431,10 @@ iframe {
 @media (max-width: 1200px) {
   .container {
     width: 100%;
-    max-width: 1100px; } }
+    max-width: 1100px; }
+
+  .bg-img-half {
+    background-position-y: center !important; } }
 @media (max-width: 960px) {
   .sidebar--section {
     position: relative; }
@@ -1440,8 +1443,7 @@ iframe {
 
   .bg-img-half {
     padding: 24px 0;
-    font-size: .9em;
-    background-position-y: center !important; }
+    font-size: .9em; }
 
   .container {
     width: 100% !important;
