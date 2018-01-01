@@ -14,7 +14,7 @@
               } else { ?>
                 <h2>Cheers to a Wonderful Year!</h2>
                 <h3>Special Holiday Offer.</h3>
-                <p>'Tis the season of gratitude... and giving. As a special thank you for a wonderful year, BoomKABOOM studio is offering complimentary on-site photography OR a small practice media kit with the purchase of a new website. But hurry, the offer ends January 15, 2018.</p>
+                <p>'Tis the season of gratitude... and giving. As a special thank you for a wonderful year, BoomKABOOM studio is offering complimentary on-site photography OR a small practice media kit with the purchase of a new website. But hurry, the offer ends January 18, 2018.</p>
               <?php } ?>
           </div>
           <div class="col-12">

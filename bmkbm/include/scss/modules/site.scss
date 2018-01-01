@@ -882,6 +882,7 @@ iframe{
   .sidebar{
     border-left:0;
     border-top: 1px solid #ccc;
+    padding:$element-spacing*2;
   }
 
   .slider .slide .slide--content h3{
@@ -931,7 +932,7 @@ iframe{
   .container{
     padding: 1em 2.5em;
     &.has-sidebar{
-      padding:1em;
+      padding:1em 1em 0 1em;
       article{
         margin:0 $element-spacing $element-spacing*4 $element-spacing*2;
       }

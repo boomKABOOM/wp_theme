@@ -66,7 +66,7 @@
         <h2>Customize Your Website Today.</h2>
         <h3>Your Practice. Your Rules.</h3>
         <p>From the earliest stages, we collaborate to determine the project requirements that, in the long run, help to make your work life simpler. Our goal is to make scheduling and communicating with your business desirable, easy, and immediate. Saving you time is important to us.</p>
-        <a href="/contact-us" class="btn btn-outline-primary">Let's get started</a>
+        <a href="/contact-us" class="btn btn-outline-primary">Schedule a Demo.</a>
       </div>
     </div>
   </div>
