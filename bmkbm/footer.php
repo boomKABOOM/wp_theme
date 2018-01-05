@@ -36,7 +36,7 @@
   </div>
 </footer>
 
-<script src="<?php echo $themeRoot; ?>/include/js/script.js"></script>
+<script src="<?php echo $themeRoot; ?>include/js/script.js"></script>
 
 <?php wp_footer(); ?>
 

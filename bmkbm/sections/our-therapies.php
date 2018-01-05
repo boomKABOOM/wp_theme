@@ -13,7 +13,7 @@
         <a href="#" class="box-item">
           <div class="title">
             <div class="image">
-              <img src="<?php echo $themeRoot; ?>/images/icon-dental.png" />
+              <img src="<?php echo $themeRoot; ?>images/icon-dental.png" />
             </div>
             <h2>Dental</h2>
           </div>
@@ -25,7 +25,7 @@
         <a href="#" class="box-item">
           <div class="title">
             <div class="image">
-              <img src="<?php echo $themeRoot; ?>/images/icon-medical.png" />
+              <img src="<?php echo $themeRoot; ?>images/icon-medical.png" />
             </div>
             <h2>Medical</h2>
           </div>
@@ -37,7 +37,7 @@
         <a href="#" class="box-item">
           <div class="title">
             <div class="image">
-              <img src="<?php echo $themeRoot; ?>/images/icon-glasses.png" />
+              <img src="<?php echo $themeRoot; ?>images/icon-glasses.png" />
             </div>
             <h2>Optometry</h2>
           </div>
@@ -49,7 +49,7 @@
         <a href="#" class="box-item">
           <div class="title">
             <div class="image">
-              <img src="<?php echo $themeRoot; ?>/images/icon-pt.png" />
+              <img src="<?php echo $themeRoot; ?>images/icon-pt.png" />
             </div>
             <h2>Therapy</h2>
           </div>
