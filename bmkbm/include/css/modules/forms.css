@@ -1,0 +1,210 @@
+.site-overlay {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+  background: rgba(2, 2, 2, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999; }
+  .site-overlay .modal-box {
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    width: 50%;
+    position: absolute;
+    top: 15vh;
+    left: 25%;
+    padding: 5em 3em;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: .5em; }
+    .site-overlay .modal-box .btn {
+      margin: 0; }
+    .site-overlay .modal-box #close-overlay {
+      color: #4a4949;
+      font-weight: 700;
+      padding: .5em;
+      border-radius: .5em;
+      border: 1px solid #bdb6b0;
+      line-height: 1em;
+      background: #fff;
+      position: absolute;
+      top: 1em;
+      right: 1em; }
+      .site-overlay .modal-box #close-overlay:hover {
+        cursor: pointer; }
+    .site-overlay .modal-box.email-capture {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/img2.jpg") center center no-repeat;
+      background-size: cover;
+      color: #fff; }
+  .site-overlay.inactive {
+    opacity: 0;
+    pointer-events: none; }
+    .site-overlay.inactive .modal-box {
+      top: 25vh; }
+
+.form {
+  font-weight: 400; }
+  .form div {
+    padding: 0;
+    margin: 0; }
+  .form .title {
+    text-align: center; }
+  .form .hidden {
+    display: none; }
+  .form.bg-white {
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 2em;
+    margin: 2em auto;
+    background: #fff; }
+  .form em {
+    font-size: .65em;
+    line-height: 1.15;
+    display: block;
+    margin: 12px 0; }
+  .form .checkbox {
+    padding: .25em .75em 0 .75em;
+    background: #f1f0ef;
+    border-radius: 5px;
+    border: 2px solid #ccc; }
+  .form ul {
+    display: block;
+    padding: 0;
+    margin: 0; }
+    .form ul li {
+      display: inline-block;
+      padding: 0;
+      margin: 0 24px;
+      font-size: 1.15em; }
+  .form input, .form textarea {
+    border-radius: 0;
+    border: 1px solid #bdb6b0;
+    box-sizing: border-box;
+    margin-bottom: 12px !important;
+    max-width: 100%; }
+    .form input[type=checkbox], .form textarea[type=checkbox] {
+      margin: 0 .5em 0 0;
+      -webkit-transform: scale(1.15);
+      -moz-transform: scale(1.15);
+      -o-transform: scale(1.15);
+      transform: scale(1.15);
+      background: #fff; }
+    .form input[type=text], .form input[type=email], .form input[type=tel], .form input[type=password], .form textarea[type=text], .form textarea[type=email], .form textarea[type=tel], .form textarea[type=password] {
+      padding: .75em 1em;
+      width: 100%;
+      background: #fff; }
+    .form input[type=submit], .form input[type=button], .form textarea[type=submit], .form textarea[type=button] {
+      -webkit-transition: 0.25s ease all;
+      -moz-transition: 0.25s ease all;
+      -o-transition: 0.25s ease all;
+      transition: 0.25s ease all;
+      padding: .75em 3em;
+      color: #4a4949;
+      background: #fff;
+      text-transform: uppercase;
+      border: 1px solid #4a4949; }
+      .form input[type=submit]:hover, .form input[type=button]:hover, .form textarea[type=submit]:hover, .form textarea[type=button]:hover {
+        background: #407390;
+        color: #fff;
+        border-color: transparent; }
+  .form textarea {
+    box-sizing: border-box;
+    padding: .75em 1em;
+    width: 100%;
+    background: #fff;
+    min-height: 3em; }
+  .form .list-radio-wrap {
+    margin: 0 0 12px 0 !important; }
+    .form .list-radio-wrap .nf-field-label {
+      width: 100% !important; }
+    .form .list-radio-wrap label {
+      border-radius: 0;
+      border: 1px solid #bdb6b0;
+      display: inline-block;
+      font-weight: 400;
+      padding: .75em 1em;
+      background: #fff; }
+    .form .list-radio-wrap ul {
+      font-size: 0; }
+      .form .list-radio-wrap ul li {
+        font-size: 16px;
+        border-radius: 0;
+        border: 1px solid #bdb6b0;
+        display: inline-block;
+        font-weight: 400;
+        padding: .5em 1em !important;
+        margin: 0 12px 0 0 !important;
+        background: #fff; }
+        .form .list-radio-wrap ul li input {
+          margin: 0 !important; }
+        .form .list-radio-wrap ul li label {
+          border-radius: 0;
+          border: 0;
+          padding: 0; }
+  .form .nf-form-fields-required {
+    font-size: .85em;
+    display: none; }
+  .form .nf-after-field .nf-error-msg {
+    height: 0; }
+  .form [class^='wppb'] ul {
+    display: block;
+    margin: 0;
+    padding: 0; }
+    .form [class^='wppb'] ul li {
+      margin: 0 1em;
+      width: 45%;
+      padding: 0;
+      position: static; }
+      .form [class^='wppb'] ul li:before {
+        content: ''; }
+    .form [class^='wppb'] ul h4 {
+      margin: 2em 0 0 0; }
+    .form [class^='wppb'] ul [class*='-heading'] {
+      display: block; }
+    .form [class^='wppb'] ul label {
+      float: none;
+      width: auto; }
+    .form [class^='wppb'] ul .wppb-default-biographical-info {
+      width: 94%; }
+
+.form .nf-after-field .nf-error-msg {
+  height: auto; }
+
+.bg-contact-form .nf-error-msg, .bg-contact-form .ninja-forms-req-symbol {
+  color: #fff; }
+
+.bg-contact-form div {
+  margin: auto; }
+
+.bg-contact-form input, .bg-contact-form textarea {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #333; }
+  .bg-contact-form input[type=checkbox], .bg-contact-form input[type=text], .bg-contact-form input[type=email], .bg-contact-form input[type=tel], .bg-contact-form input[type=password], .bg-contact-form input[type=submit], .bg-contact-form input[type=button], .bg-contact-form textarea[type=checkbox], .bg-contact-form textarea[type=text], .bg-contact-form textarea[type=email], .bg-contact-form textarea[type=tel], .bg-contact-form textarea[type=password], .bg-contact-form textarea[type=submit], .bg-contact-form textarea[type=button] {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: #333; }
+
+@media (max-width: 768px) {
+  .site-overlay .modal-box {
+    width: 90%;
+    left: 5%; } }
+
+@media (max-width: 576px) {
+  .sidebar {
+    border-left: 0; }
+  .btns-container {
+    display: none; }
+  input {
+    width: 100% !important; }
+  .form.bg-white {
+    margin: .5em; }
+  .site-overlay .modal-box {
+    padding: 3em;
+    top: 1em; }
+  #mc-embedded-subscribe-form input[type=email] {
+    width: 100% !important; } }

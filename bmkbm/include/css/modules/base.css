@@ -1,0 +1,199 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2em;
+  letter-spacing: 0.08em;
+  color: #4a4949; }
+
+a, a:hover, a img, a:focus {
+  text-decoration: none;
+  outline: none;
+  border: 0; }
+
+p {
+  font-size: 1em;
+  line-height: 2em;
+  margin: 12px 12px 12px 0; }
+  p a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #808285;
+    text-decoration: underline;
+    font-weight: 700; }
+    p a:hover {
+      color: #4a4949; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+hr {
+  height: 0;
+  clear: both;
+  display: block;
+  border: 0;
+  width: 90%;
+  border-top: 1px solid #bdb6b0;
+  margin: 72px 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  padding: 0;
+  margin: 0 0 12px 0;
+  font-weight: 300;
+  line-height: 2em; }
+
+h1, h3 {
+  font-size: 2.35em;
+  line-height: 1.15em;
+  color: #407390;
+  margin: 12px 0 24px 0;
+  font-weight: 700; }
+
+h2 {
+  font-size: 1.15em;
+  letter-spacing: .25em;
+  color: #bdb6b0;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 1.5em;
+  display: block;
+  margin: 12px 0;
+  font-weight: 700; }
+
+h5 {
+  font-size: 1.15em;
+  line-height: 1.5em; }
+
+h6 {
+  font-size: 1.3em;
+  color: inherit;
+  font-weight: 200;
+  margin: 12px 12px 12px 0; }
+
+blockquote p {
+  color: #bdb6b0;
+  font-size: 1.75em !important;
+  line-height: 1.15em;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+  blockquote p strong {
+    font-size: .5em;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: none;
+    display: inline-block;
+    letter-spacing: 0.08em; }
+
+.two-col {
+  column-count: 2;
+  column-gap: 48px;
+  margin-top: 24px;
+  font-size: .85em; }
+
+article h6 {
+  margin: 12px 120px 12px 0; }
+
+article p {
+  margin: 12px 120px 12px 0; }
+
+article img {
+  min-width: 50%;
+  margin: 48px 0; }
+
+article ul {
+  display: inline-block;
+  margin: 0 120px 24px 24px;
+  padding: 0;
+  font-size: 1em;
+  line-height: 2em; }
+  article ul li {
+    display: block;
+    margin: 0 0 .75em 0;
+    position: relative;
+    line-height: 1.5em; }
+    article ul li:before {
+      position: absolute;
+      top: 0;
+      left: -24px;
+      content: '\25cf'; }
+    article ul li ul {
+      display: block;
+      margin: 0 0 0 24px;
+      font-size: 1em; }
+      article ul li ul li {
+        font-weight: 300; }
+        article ul li ul li:before {
+          content: '\25CB'; }
+
+article ol {
+  display: block;
+  counter-reset: item;
+  list-style: none;
+  margin: 0 0 0 48px;
+  padding: 0; }
+  article ol li {
+    counter-increment: item;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-weight: 700; }
+    article ol li strong {
+      font-size: 1.15em; }
+    article ol li:before {
+      font-weight: 700;
+      color: #808285;
+      position: absolute;
+      top: .75em;
+      right: calc(100% + 6px);
+      font-size: 1.25em;
+      line-height: 0;
+      text-align: center;
+      content: counter(item) "."; }
+
+.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+  max-width: 70%; }
+
+.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+  max-width: 70%; }
+
+@media (max-width: 960px) {
+  .two-col {
+    column-count: 1;
+    column-gap: 0; } }
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 12px; }
+  article p, article h6 {
+    margin: 12px 0; }
+  article ul {
+    margin: 0 0 24px 24px; }
+  h1 {
+    font-size: 2.5em; }
+  h2 {
+    font-size: 1.2em; }
+  blockquote p {
+    font-size: 1.75em !important; }
+  .alignleft, .alignright {
+    max-width: 50%; } }
+
+@media (max-width: 576px) {
+  .alignleft, .alignright {
+    float: none;
+    margin: auto;
+    display: block; } }
+
+/* wp mce content editor override */
+.mce-content-body p, .mce-content-body div, .mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body h5, .mce-content-body h6 {
+  line-height: 2em; }

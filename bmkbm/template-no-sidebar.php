@@ -3,7 +3,7 @@
 while (have_posts()) : the_post(); ?>
 
 <div class="wrapper bg-drkblue dark">
-  <div class="container slowfade" style="padding:5em 0 2em 0;">
+  <div class="container slowfade pt-5 pb-5">
     <?php if(!(get_field('remove_title_subtitle'))){ ?>
 
       <div class="page-title">

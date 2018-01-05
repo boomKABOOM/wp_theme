@@ -1,0 +1,16 @@
+.home-page-styles article .btn {
+  margin: 24px 0; }
+
+.home-page-styles article p {
+  margin: 0 0 12px 0; }
+
+.home-page-styles article ul li {
+  margin: 12px 0; }
+
+@media (max-width: 576px) {
+  .home-page-styles h1 {
+    line-height: 1.15em; }
+    .home-page-styles h1 em {
+      line-height: 1.15em; }
+  .home-page-styles .after-content-links a {
+    width: 85% !important; } }
